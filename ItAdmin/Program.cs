@@ -51,8 +51,8 @@ namespace ItAdmin
 
             //output
             //toon de naam, klas, mail van school
-            uitvoer = voornaam;
-            uitvoer = famillienaam;
+            uitvoer = ToLower(voornaam);
+            uitvoer = ToUpper(famillienaam);
             uitvoer = klas;
             uitvoer = mail;
             Console.WriteLine();
@@ -61,6 +61,16 @@ namespace ItAdmin
             Console.WriteLine();
             Console.WriteLine("druk op enter om af te sluiten");
             Console.ReadLine();
+        }
+
+        private static int ToUpper(int famillienaam)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static int ToLower(int voornaam)
+        {
+            throw new NotImplementedException();
         }
     }
 }
